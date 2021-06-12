@@ -1,0 +1,99 @@
+<style>
+body
+{
+  background-image:linear-gradient(
+      195deg,
+     rgba(217,167,199,0.9),
+      rgba(255,252,220,0.7)
+    ),url('https://www.usda.gov/sites/default/files/covid-header-2.png');
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+   background-height: 500%;
+
+}
+  #main{
+     font-weight:bold;
+  text-align:left;
+  font-style:italic;
+  font-size:40px;
+    
+  }
+  #survey-form{
+    background-color:rgba(173,172,172,0.3);
+    margin:30px;
+    padding:50px,0px,50px,0px;
+   
+}
+  input{
+    width:500px;
+    height:30px;
+  }
+  input[type=radio] {
+    width: 35px; 
+    height: 35px;
+}
+  input[type=checkbox] {
+    width: 35px; 
+    height: 35px;
+}
+  select{
+     width: 80px; 
+    height: 35px;
+  }
+</style>
+
+<main id="main">
+  <h1 id="title">survey form</h1>
+  <p id="description"><em>Thank you for taking the time to fill out the survey form</em></p>
+  <form id="survey-form">
+    <div>
+      <label for="name" id="name-label">Name</label><br>
+      <input type="text" name = "name" id="name" placeholder="enter your name" required></input>
+    </div><br>
+    <div>
+      <label for="email" id="email-label">Email</label><br>
+      <input type="email" name = "email" id="email" placeholder="eg:ejy@gmail.com" required></input>
+    </div>
+    <br>
+    <div>
+      <label for="number" id="number-label">age</label><br>
+      <input type="number" name = "number" id="number" placeholder="eg:20" min="10" max="60" required>
+    </div>
+    <br>
+<div>
+<label for="dropdown" id="gender">gender</label><br>
+  <select id="dropdown">
+    <option value="female">female</option>
+    <option value="male">male</option>
+    <option value="other">other</option>
+    </select>
+</div>
+<br>
+<h2>Symptoms</h2>
+<input type="radio" id="fever" name="symptoms" value="fever">
+<label for="fever">fever</label><br>
+<input type="radio" id="dry cough" name="symptoms" value="dry cough">
+<label for="dry cough">dry cough</label><br>
+<input type="radio" id="tiredness" name="symptoms" value="tiredness">
+<label for="tiredness">tiredness</label><br>
+<div class="checkbox_items">
+  <br>
+  <h2>What are the preventions that you are currently following?(Check all that apply) </h2>
+<input type="checkbox" id="clean_hands" name="preventions" value="clean_hands">
+<label for="clean_hands">Clean your hands often. Use soap and water, or an alcohol-based hand rub.</label><br>
+  <input type="checkbox" id="safe_distance" name="preventions" value="safe_distance">
+<label for="safe_distance">Maintain a safe distance from anyone who is coughing or sneezing.</label><br>
+  <input type="checkbox" id="wear_mask" name="preventions" value="wear_mask">
+<label for="wear_mask">Wear a mask when physical distancing is not possible.</label><br>
+   <input type="checkbox" id="sneeze" name="preventions" value="sneeze">
+<label for="sneeze">Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</label>
+</div>
+<div="comment">
+  <label for="name"> <h2>Any extra or unique symptoms you are facing</h2></label>
+  <textarea  rows="10" cols="100" id="comment" name="comment" ></textarea>
+</div>
+<input type="submit" id="submit" value="Submit">
+  </form>
+  
+</main>
